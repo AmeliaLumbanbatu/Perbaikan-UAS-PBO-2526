@@ -1,0 +1,7 @@
+data/
+target/
+*.jar
+dependency-reduced-pom.xml
+input.txt
+logging.properties
+*.class

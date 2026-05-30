@@ -1,3 +1,5 @@
+//Amelia Renata Lumbanbatu - 12S24031
+
 package pbo.f01.entity;
 
 import javax.persistence.*;

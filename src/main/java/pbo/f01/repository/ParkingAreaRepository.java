@@ -1,5 +1,6 @@
-package pbo.f01.repository;
+//Amelia Renata Lumbanbatu - 12S24031
 
+package pbo.f01.repository;
 import pbo.f01.entity.ParkingArea;
 import javax.persistence.EntityManager;
 import java.util.List;

@@ -1,3 +1,5 @@
+// Amelia Renata Lumbanbatu - 12S24031
+
 package pbo.f01;
 
 import pbo.f01.service.ParkingService;
@@ -5,14 +7,18 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.EntityManager;
 import java.util.Scanner;
-
-/**
- * Driver class utama
- * Nama: [Amelia Renata Lumbanbatu]
- * Nim: [12S24031]
- */
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 public class App {
+
+    static {
+        Logger.getLogger("org.hibernate").setLevel(Level.OFF);
+        Logger.getLogger("org.h2").setLevel(Level.OFF);
+        Logger.getLogger("com.zaxxer").setLevel(Level.OFF);
+        System.setProperty("org.jboss.logging.provider", "jdk");
+    }
+
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("park-it-pu");
         EntityManager em = emf.createEntityManager();
